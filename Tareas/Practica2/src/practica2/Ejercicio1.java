@@ -19,7 +19,7 @@ public class Ejercicio1 {
 
     public int meses() {
         int mes = 0;
-        if (num == 1) {
+       if (num == 1) {
             mes = num;
         } else {
             if (num == 2) {
