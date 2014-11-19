@@ -76,7 +76,7 @@ public class clsJuego {
     public void setJugador2(String jugador2) {
         this.jugador2 = jugador2;
     }
-
+    /*Método para crear el tablero que visualizara el jugador*/
     public void cargarMatriz() {
         teclado = new Scanner(System.in);
         matriz = new char[6][7];
@@ -94,7 +94,7 @@ public class clsJuego {
     public void jugar() {
         teclado = new Scanner(System.in);
         int cont = 0;
-//matriz=new int [6][7];
+    //matriz=new int [6][7];
         char continuar = ' ';
 
         do {
@@ -210,8 +210,8 @@ public class clsJuego {
         } while (continuar == 's' || continuar == 'S' || continuar == 'r' || continuar == 'R');
 
     }
-//Metodo para validar 4 en linea vertical, horizontal o diagonal del jugador 1
-//Medio funciona con algunas fallas
+/*Metodo para validar 4 en linea vertical, horizontal o diagonal del jugador 1
+  medio funciona con algunas fallas*/
 
     public void validarJugador1HorizontalDerecha() {
         int forinLine = 0;
@@ -262,7 +262,7 @@ public class clsJuego {
         verificador = 1;
         forinLine = 0;
     }
-
+    /*Método para validar si jugador uno gana de forma horizontal*/
     public void validarJugador1HorizontalIzquierda() {
         int verificador = 1;
         int forinLine = 0;
@@ -311,7 +311,7 @@ public class clsJuego {
         verificador = 1;
         forinLine = 0;
     }
-
+    /*Método para validar si el jugador uno gana verticalmante*/
     public void validarJugador1verticalmente() {
         int verificador = 0;
         int forinLine = 1;
@@ -349,7 +349,7 @@ public class clsJuego {
         verificador = 1;
         forinLine = 0;
     }
-
+     /*Método para validar si el jugador dos gana de forma verticalmente*/
     public void validarJugador2HorizontalDerecha() {
         int forinLine1 = 0;
         int verificador1 = 1;
@@ -442,7 +442,7 @@ public class clsJuego {
         verificador1 = 1;
         forinLine1 = 0;
     }
-
+    /*Método para validar si jugador gana de forma vertical*/
     public void validarJugador2verticalmente() {
         int verificador1 = 1;
         int forinLine1 = 0;
@@ -480,8 +480,8 @@ public class clsJuego {
         forinLine1 = 0;
     }
 
-//Metodo para validar 4 en linea vertical, horizontal o diagonal del jugador 2
-//Medio funciona con algunas fallas
+    /*Metodo para validar 4 en linea vertical, horizontal o diagonal del jugador 2
+      medio funciona con algunas fallas*/
     public void validarJugador1DiagonalmenteDerecha(){
      int verificador = 1;
         int forinLine = 0;
@@ -530,7 +530,7 @@ public class clsJuego {
     }
     
     
-    
+    /*Método para reiniciar la matriz de juego*/  
     public void reiniciar() {
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 7; j++) {
